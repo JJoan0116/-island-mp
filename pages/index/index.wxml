@@ -1,5 +1,6 @@
 <!--index.wxml-->
 <view class="container">
+  <like-cmp class="like" read-only="{{true}}" like="{{true}}" count="{{classic.fav_nums}}" />
   <view class="userinfo">
     <block wx:if="{{canIUseOpenData}}">
       <view class="userinfo-avatar" bindtap="bindViewTap">
