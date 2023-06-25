@@ -1,4 +1,0 @@
-<!--index.wxml-->
-<view class="container">
-  <like-cmp class="like" read-only="{{true}}" like="{{true}}" count="{{classic.fav_nums}}" />
-</view>

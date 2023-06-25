@@ -1,11 +1,5 @@
 {
-  "pages": ["pages/index/index", "pages/logs/logs", "pages/classic/classic"],
-  "window": {
-    "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "Weixin",
-    "navigationBarTextStyle": "black"
-  },
+  "pages": ["pages/classic/classic", "pages/classic-detail/classic-detail"],
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
@@ -26,7 +20,7 @@
         "text": "流行"
       },
       {
-        "pagePath": "pages/index/index",
+        "pagePath": "pages/classic-detail/classic-detail",
         "selectedIconPath": "/images/tab/book@highlight.png",
         "iconPath": "/images/tab/book.png",
         "text": "书单"

@@ -17,6 +17,13 @@ class LikeModel extends Http {
       success: (res) => {
         console.log('like', res);
       },
+      error: () => {
+        wx.showToast({
+          title: '请求失败',
+          icon: 'error',
+          duration: 2000,
+        });
+      },
     });
   }
 }

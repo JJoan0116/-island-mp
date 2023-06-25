@@ -20,7 +20,7 @@ class Http {
         appkey: config.appkey,
       },
       success: (res) => {
-        // console.log(res);
+        // console.log('success', res);
         const code = res.statusCode.toString();
         const startChar = code.charAt(0);
         if (startChar === '2') {
@@ -30,6 +30,11 @@ class Http {
         }
       },
       fail: (err) => {
+        wx.showToast({
+          title: '请求失败',
+          icon: 'error',
+          duration: 2000,
+        });
         params.error && params.error(err);
       },
     });
