@@ -1,0 +1,4 @@
+<!--pages/classic/classic.wxml-->
+<view class="container">
+    <like-cmp />
+</view>
