@@ -1,4 +1,8 @@
 // components/preview/index.js
+import LikeModel from '../../services/like';
+
+let likeModel = new LikeModel();
+
 Component({
   /**
    * 组件的属性列表
@@ -23,6 +27,7 @@ Component({
   methods: {
     onLike: function () {
       console.log('like');
+      likeModel.like('like', '111', '1');
     },
   },
 });
