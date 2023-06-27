@@ -26,8 +26,14 @@ Component({
    */
   methods: {
     onLike: function () {
-      console.log('like');
-      likeModel.like('like', '111', '1');
+      const behavior = this.properties.like ? 'cancel' : 'like';
+      this.triggerEvent(
+        'like',
+        {
+          behavior,
+        },
+        {},
+      );
     },
   },
 });

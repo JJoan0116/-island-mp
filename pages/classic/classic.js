@@ -33,4 +33,9 @@ Page({
       });
     });
   },
+
+  onLike: function (res) {
+    const { detail } = res;
+    console.log('res', res, detail);
+  },
 });
