@@ -3,24 +3,35 @@ Component({
   /**
    * 组件的属性列表
    */
-  properties: {},
+  properties: {
+    title: String,
+    latest: Boolean,
+    first: Boolean,
+  },
 
   /**
    * 组件的初始数据
    */
   data: {
-    latest: false,
-    disLeftSrc: '',
-    highLeftSrc: '',
-    title: '',
-    first: false,
+    disLeftSrc: './images/triangle.dis@left.png',
+    highLeftSrc: './images/triangle@left.png',
+    disRightSrc: './images/triangle.dis@right.png',
+    highRightSrc: './images/triangle@right.png',
   },
 
   /**
    * 组件的方法列表
    */
   methods: {
-    onLeft: () => {},
-    onRight: () => {},
+    // 左滑
+    onLeft() {
+      // console.log('left');
+      this.triggerEvent('left', {}, {});
+    },
+    // 右滑
+    onRight() {
+      // console.log('right');
+      this.triggerEvent('right', {}, {});
+    },
   },
 });

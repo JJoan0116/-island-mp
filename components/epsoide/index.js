@@ -6,8 +6,13 @@ Component({
   properties: {
     index: {
       type: Number,
-      observer: function () {
-        //
+      observer: function (newVal, oldVal, changedPath) {
+        // console.log(1111, newVal, oldVal, changedPath);
+        if (newVal < 10) {
+          this.setData({
+            _index: '0' + newVal,
+          });
+        }
       },
     },
   },
